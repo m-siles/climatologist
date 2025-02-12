@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.weather.gov/points/200,0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/geo+json
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      server:
+      - nginx/1.20.1
+      content-type:
+      - application/problem+json
+      x-powered-by:
+      - PHP/8.0.30
+      x-request-id:
+      - c90b8c01-aab6-4352-82e9-677db206cb91
+      x-correlation-id:
+      - c2d6e41d
+      x-server-id:
+      - vm-bldr-nids-apiapp12.ncep.noaa.gov
+      access-control-allow-origin:
+      - "*"
+      access-control-expose-headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      pragma:
+      - no-cache
+      content-length:
+      - '312'
+      cache-control:
+      - private, must-revalidate, max-age=86400
+      expires:
+      - Thu, 13 Feb 2025 01:09:06 GMT
+      date:
+      - Wed, 12 Feb 2025 01:09:06 GMT
+      connection:
+      - keep-alive
+      x-edge-request-id:
+      - 3bf4703
+      vary:
+      - Accept,Feature-Flags,Accept-Language
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "correlationId": "c2d6e41d",
+            "title": "Invalid Parameter",
+            "type": "https://api.weather.gov/problems/InvalidParameter",
+            "status": 400,
+            "detail": "Parameter \"point\" is invalid: '200,0' does not appear to be a valid coordinate",
+            "instance": "https://api.weather.gov/requests/c2d6e41d"
+        }
+  recorded_at: Wed, 12 Feb 2025 01:09:06 GMT
+recorded_with: VCR 6.3.1

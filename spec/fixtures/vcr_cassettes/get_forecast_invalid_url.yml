@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.weather.gov/invalid/url
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/geo+json
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/1.20.1
+      content-type:
+      - application/problem+json
+      x-powered-by:
+      - PHP/8.0.30
+      x-request-id:
+      - a35ae0ed-3ee2-45ff-9e28-711c4f26393f
+      x-correlation-id:
+      - c2d6cf04
+      x-server-id:
+      - vm-bldr-nids-apiapp16.ncep.noaa.gov
+      access-control-allow-origin:
+      - "*"
+      pragma:
+      - no-cache
+      content-length:
+      - '259'
+      cache-control:
+      - private, must-revalidate, max-age=0
+      expires:
+      - Wed, 12 Feb 2025 01:09:05 GMT
+      date:
+      - Wed, 12 Feb 2025 01:09:05 GMT
+      connection:
+      - keep-alive
+      x-edge-request-id:
+      - 3bf428d
+      vary:
+      - Accept,Feature-Flags,Accept-Language
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "correlationId": "c2d6cf04",
+            "title": "Not Found",
+            "type": "https://api.weather.gov/problems/NotFound",
+            "status": 404,
+            "detail": "'/invalid/url' is not a valid resource path",
+            "instance": "https://api.weather.gov/requests/c2d6cf04"
+        }
+  recorded_at: Wed, 12 Feb 2025 01:09:05 GMT
+recorded_with: VCR 6.3.1

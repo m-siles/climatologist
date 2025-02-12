@@ -1,0 +1,14 @@
+<div class="py-5 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <% @forecasts.each do |day| %>
+      <div class="max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow-sm items-center text-center">
+        <h2 class=""><%= day[:day_of_week] %></h2>
+        <h1 class="mb-2 text-2xl font-bold">
+        <%= day[:temperature] %>
+        <span class="self-end text-3xl">F</span>
+        </h1>
+        <div class="items-center text-center">
+            <p class="mb-4"><%= day[:details] %></p>
+        </div>
+      </div>
+    <%end %>
+</div>

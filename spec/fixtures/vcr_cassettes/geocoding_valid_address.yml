@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://geocode.maps.co/search?q=123+Main+St%2C+Kansas+City%2C+MO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 12 Feb 2025 01:09:06 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Accept-Encoding
+      access-control-allow-origin:
+      - "*"
+      content-encoding:
+      - gzip
+      last-modified:
+      - Wed, 12 Feb 2025 00:22:52 GMT
+      cf-cache-status:
+      - HIT
+      age:
+      - '2774'
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=r8rO1T7EFOoNQTqA2JH%2FiTLuZh5zML3hGZKT5sm7gtDlm6jYwRXsxJO6ee1cKzTVqddzw46yDLE6TFL2aRGiq8L4wcEfSzo3e245rj9ucKOht9FHqj92lP%2BS6GuQDacquw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 9108b0fa5c55e260-ORD
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=11599&min_rtt=11535&rtt_var=4455&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2292&recv_bytes=804&delivery_rate=240272&cwnd=188&unsent_bytes=0&cid=c7bfc6e995e3a2b1&ts=140&x=0"
+    body:
+      encoding: UTF-8
+      string: '[{"place_id":298616731,"licence":"Data © OpenStreetMap contributors,
+        ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":872288058,"boundingbox":["39.0498646","39.0498831","-94.5865005","-94.5864993"],"lat":"39.0498646","lon":"-94.5865005","display_name":"Main
+        Street, Southmoreland, Westport, Kansas City, Jackson County, Missouri, 64111,
+        United States","class":"highway","type":"secondary","importance":0.6000099999999999},{"place_id":298591286,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":495566570,"boundingbox":["39.0766065","39.0774508","-94.584904","-94.5848208"],"lat":"39.0774508","lon":"-94.5848208","display_name":"Main
+        Street, Union Hill, Kansas City, Jackson County, Missouri, 64111, United States","class":"highway","type":"secondary","importance":0.50001},{"place_id":298589104,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":495111997,"boundingbox":["39.063787","39.0761043","-94.585681","-94.5849508"],"lat":"39.070051","lon":"-94.585364","display_name":"Main
+        Street, Hanover Place, Westport, Kansas City, Jackson County, Missouri, 64111,
+        United States","class":"highway","type":"secondary","importance":0.50001},{"place_id":298624519,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":553131837,"boundingbox":["39.0422252","39.0429033","-94.5869639","-94.5868191"],"lat":"39.0425914","lon":"-94.5869216","display_name":"Main
+        Street, South Plaza, Country Club Plaza, Kansas City, Jackson County, Missouri,
+        64111, United States","class":"highway","type":"secondary","importance":0.50001},{"place_id":298290176,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":18532898,"boundingbox":["38.957754","38.9667284","-94.591239","-94.590816"],"lat":"38.962257","lon":"-94.590993","display_name":"Main
+        Street, Indian Village, Kansas City, Jackson County, Missouri, 64114, United
+        States","class":"highway","type":"residential","importance":0.50001},{"place_id":298293257,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":526104193,"boundingbox":["38.97401","38.992136","-94.590421","-94.589553"],"lat":"38.983082","lon":"-94.590007","display_name":"Main
+        Street, Broadland, Kansas City, Jackson County, Missouri, 64114, United States","class":"highway","type":"residential","importance":0.50001},{"place_id":298625841,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":643641012,"boundingbox":["39.022389","39.023219","-94.588028","-94.587981"],"lat":"39.0231593","lon":"-94.5879843","display_name":"Main
+        Street, Wornall Homestead, Kansas City, Jackson County, Missouri, 64113, United
+        States","class":"highway","type":"residential","importance":0.50001},{"place_id":298289956,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright","osm_type":"way","osm_id":18532914,"boundingbox":["38.952445","38.954573","-94.5914615","-94.591354"],"lat":"38.9535226","lon":"-94.5914048","display_name":"Main
+        Street, Kansas City, Jackson County, Missouri, 64114, United States","class":"highway","type":"residential","importance":0.50001}]'
+  recorded_at: Wed, 12 Feb 2025 01:09:06 GMT
+recorded_with: VCR 6.3.1

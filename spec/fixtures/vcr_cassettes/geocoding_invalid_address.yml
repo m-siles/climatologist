@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://geocode.maps.co/search?q=Invalid+Address+123456
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 12 Feb 2025 01:09:06 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '2'
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      last-modified:
+      - Wed, 12 Feb 2025 00:33:55 GMT
+      cf-cache-status:
+      - HIT
+      age:
+      - '1979'
+      accept-ranges:
+      - bytes
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Z960jioYxTvy3cr3DUoAI4gYmW%2FYTBpb%2FIFPb3ys62LLBEWaNfjt5ktbyxGuvdZ%2BA6%2BJNy20VuI0kPUvZO2BwDrp9f1SgRjHlreuMPoYZrIx5DIbIjuuuQOySU1p%2FqlCIA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+      cf-ray:
+      - 9108b0fcab25eb5c-ORD
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=11243&min_rtt=9256&rtt_var=4890&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2291&recv_bytes=794&delivery_rate=312878&cwnd=193&unsent_bytes=0&cid=fc9b465f27818aee&ts=216&x=0"
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Wed, 12 Feb 2025 01:09:06 GMT
+recorded_with: VCR 6.3.1
