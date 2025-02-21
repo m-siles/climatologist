@@ -41,7 +41,7 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 # Redis for caching
-gem "redis", "~> 5.0"
+gem "redis", "~> 5.4"
 gem "connection_pool"
 
 # Faraday for requests
